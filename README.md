@@ -37,6 +37,13 @@ The user provides coefficients for 3 equations in the form:
 - `a₃x + b₃y + c₃z = d₃`
 
 The program processes these inputs and outputs the values for `x`, `y`, and `z` (if a solution exists).
+## OUTPUT
+![Screenshot (204)](https://github.com/user-attachments/assets/e848fec2-cd7d-4eec-bff1-b80ddfa9b8ce)
+![Screenshot (205)](https://github.com/user-attachments/assets/373e7d8e-255c-4b4b-a8b1-745f6a40a637)
+
+
+
+
 
 
 
