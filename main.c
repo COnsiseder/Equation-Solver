@@ -153,7 +153,7 @@ void three(float *a,float *b,float *c,float *h)
       d[i][2]=*(c+i);
       d[i][3]=*(h+i);
   }
- print(d);
+ // print(d);
  t1=d[0][0];
  t2=d[1][0];
  t3=d[2][0];
@@ -162,14 +162,14 @@ void three(float *a,float *b,float *c,float *h)
       d[1][i]=t1*d[1][i]-t2*d[0][i];
       d[2][i]=t1*d[2][i]-t3*d[0][i];
   }
-  print(d);
+  // print(d);
   t1=d[1][1];
   t2=d[2][1];
   for(i=1;i<4;i++)
   {
       d[2][i]=t1*d[2][i]-t2*d[1][i];
   }
-  print(d);
+  // print(d);
   if(d[2][2]==0&&d[2][3]!=0)
   printf("\nit has INFINITE SOLUTIONS\n");
   else if(d[2][2]==0&&d[2][2]==0)
@@ -182,20 +182,20 @@ void three(float *a,float *b,float *c,float *h)
       {
         d[1][i]=t2*d[1][i]-t1*d[2][i];
       }
-      print(d);
+      // print(d);
       t1=d[0][1];
       t2=d[0][2];
       for(i=0;i<4;i++)
       {
           d[0][i]=d[1][1]*d[2][2]*d[0][i]-t1*d[1][i]*d[2][2]-t2*d[2][i]*d[1][1];
       }
-      print(d);
+      // print(d);
       printf("\nx=%Lf\n\ny=%Lf\n\nz=%Lf\n",d[0][3]/d[0][0],d[1][3]/d[1][1],d[2][3]/d[2][2]);
   }
   return;
 
 }
-
+// use print to valuate the mathematics
 void print(long double g[3][4])
 {
     int i,j;
